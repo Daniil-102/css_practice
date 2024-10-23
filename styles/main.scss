@@ -32,7 +32,6 @@ html {
   }
 }
 .person {
-  width: 200px;
   transition: all 1s;
 
   &:hover {
@@ -43,11 +42,10 @@ html {
     border-radius: 12px;
 
     .person__extra {
-      display: block;
+      opacity: 1;
     }
 
     .person__extra {
-      font-size: 21px;
       margin: 11px 0 7px;
       text-align: center;
       transition: 0s;
@@ -55,8 +53,9 @@ html {
     .person__name {
       // font-size: 24px;
     }
-    .person__photo {
+    .person__photo-img {
       border-radius: 60px;
+      transition: 1s;
     }
   }
 
@@ -65,7 +64,7 @@ html {
 
     &-img {
       border-radius: 50%;
-      width: 200px;
+      width: 100%;
       margin-bottom: 8px;
     }
   }
@@ -100,7 +99,9 @@ html {
 
   &__extra {
     color: #000;
-    display: none;
+    bottom: 20px;
+    opacity: 0;
+    pointer-events: none;
   }
 
   &__sport {
