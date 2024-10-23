@@ -152,7 +152,7 @@ html {
 .people__container {
   display: grid;
   grid-template-columns: repeat(2, 200px);
-  gap: 40px 30px;
+  gap: 20px 30px;
   margin: 30px auto;
   justify-content: center;
 }
@@ -164,6 +164,12 @@ html {
 
 .person {
   transition: all 1s;
+  position: relative;
+  padding-bottom: 20px;
+}
+.person:hover {
+  padding-bottom: 0;
+  transition: 0;
 }
 .person:hover {
   padding: 12px;
@@ -176,9 +182,9 @@ html {
   opacity: 1;
 }
 .person:hover .person__extra {
-  margin: 11px 0 7px;
   text-align: center;
   transition: 0s;
+  transform: translateY(10px);
 }
 .person:hover .person__photo-img {
   border-radius: 60px;
@@ -217,9 +223,10 @@ html {
 }
 .person__extra {
   color: #000;
-  bottom: 20px;
   opacity: 0;
   pointer-events: none;
+  height: 20px;
+  line-height: 100%;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */
