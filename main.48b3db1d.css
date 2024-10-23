@@ -165,10 +165,8 @@ html {
 .person {
   transition: all 1s;
   position: relative;
-  padding-bottom: 20px;
 }
 .person:hover {
-  padding-bottom: 0;
   transition: 0;
 }
 .person:hover {
