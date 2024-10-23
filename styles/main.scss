@@ -22,7 +22,7 @@ html {
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 200px);
-    gap: 40px 30px;
+    gap: 20px 30px;
     margin: 30px auto;
     justify-content: center;
 
@@ -33,6 +33,13 @@ html {
 }
 .person {
   transition: all 1s;
+  position: relative;
+  padding-bottom: 20px;
+
+  &:hover {
+    padding-bottom: 0;
+    transition: 0;
+  }
 
   &:hover {
     padding: 12px;
@@ -46,12 +53,10 @@ html {
     }
 
     .person__extra {
-      margin: 11px 0 7px;
+      // margin: 11px 0 7px;
       text-align: center;
       transition: 0s;
-    }
-    .person__name {
-      // font-size: 24px;
+      transform: translateY(10px);
     }
     .person__photo-img {
       border-radius: 60px;
@@ -99,9 +104,10 @@ html {
 
   &__extra {
     color: #000;
-    bottom: 20px;
     opacity: 0;
     pointer-events: none;
+    height: 20px;
+    line-height: 100%;
   }
 
   &__sport {
