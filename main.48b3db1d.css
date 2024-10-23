@@ -163,7 +163,6 @@ html {
 }
 
 .person {
-  width: 200px;
   transition: all 1s;
 }
 .person:hover {
@@ -174,23 +173,23 @@ html {
   border-radius: 12px;
 }
 .person:hover .person__extra {
-  display: block;
+  opacity: 1;
 }
 .person:hover .person__extra {
-  font-size: 21px;
   margin: 11px 0 7px;
   text-align: center;
   transition: 0s;
 }
-.person:hover .person__photo {
+.person:hover .person__photo-img {
   border-radius: 60px;
+  transition: 1s;
 }
 .person__photo {
   position: relative;
 }
 .person__photo-img {
   border-radius: 50%;
-  width: 200px;
+  width: 100%;
   margin-bottom: 8px;
 }
 .person__rank {
@@ -218,7 +217,9 @@ html {
 }
 .person__extra {
   color: #000;
-  display: none;
+  bottom: 20px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */
